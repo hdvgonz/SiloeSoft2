@@ -1,0 +1,57 @@
+<div class="registro-tutor">
+    <form class="custom-form" method="post">
+      <h1>Registro Estudiante</h1>
+      <br>
+      <br>
+      <label for="nombres">Nombres:</label>
+      <input
+        type="nombres"
+        [(ngModel)]="nombres"
+        name="nombres"
+        placeholder="nombres"
+        required="required"
+      />
+
+      <label for="apellidos">Apellidos:</label>
+      <input
+        type="apellidos"
+        [(ngModel)]="apellidos"
+        name="apellidos"
+        placeholder="apellidos"
+        required="apellidos"
+      />
+      <label for="Fecha de nacimiento">Fecha de nacimiento:</label>
+
+        <input type="date" id="start" name="trip-start"
+            value="2018-07-22"
+            min="2001-01-01" max="2022-01-01">
+
+      <label for="direccion">Dirección:</label>
+        <input
+        type="dirección"
+        [(ngModel)]="direccion"
+        name="direccion"
+        placeholder="direccion"
+        required="required"
+        />
+
+      <label for="email">Email:</label>
+        <input
+        type="email"
+        [(ngModel)]="email"
+        name="email"
+        placeholder="email"
+        required="required"
+        />
+
+       <label for="celular">Celular:</label>
+        <input
+        type="celular"
+        [(ngModel)]="celular"
+        name="clular"
+        placeholder="celular"
+        required="required"
+        />
+
+      <button type="submit" (click)="register()">Register</button>
+    </form>
